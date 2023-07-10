@@ -6,7 +6,7 @@ import uuid
 dynamodb = boto3.resource('dynamodb')
 
 # Change - the name of the DynamoDB table
-table = dynamodb.Table('get-in-touch-table')
+table = dynamodb.Table('CodeCanvaDynamo')
 
 # Create an SNS Client
 client_sns = boto3.client('sns')
