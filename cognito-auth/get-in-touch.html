@@ -2,7 +2,7 @@
 <html lang="zxx">
 
 <head>
- 
+
   <!-- Favicons-->
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
@@ -37,7 +37,7 @@
   <br>
 
       <div class="container">
-        
+
         <div class="row">
           <div class="col-12">
             <div class="lightbox-content">
@@ -57,21 +57,21 @@
                     <form class="contact-form" id="contact-form" action="#">
                       <h4 class="content-title">Message Me</h4>
                       <div class="row">
-                        
+
                         <div class="col-12 col-md-6 form-group"><input id="userNameInput" class="form-control" placeholder="User Name" type="text" name="name" id="userName" required=""></div>
                         <div class="col-12 col-md-6 form-group"><input id="userEmailInput" class="form-control" placeholder="E-mail" type="email" name="email" required=""></div>
                         <div class="col-12 form-group"><input id="userSubject" class="form-control"  type="text" name="subject" placeholder="Subject" required=""></div>
                         <div class="col-12 form-group form-message"><textarea id="userDescription" class="form-control"  name="message" placeholder="Message" rows="5" required=""></textarea></div>
-                        
+
 
                         <!-- Button on Click Event -->
                         <!-- Change - If needed your function name -->
                         <div class="col-12 form-submit">
-                          <button 
-                             onclick="sendData(
-                              document.getElementById('userNameInput').value, 
-                              document.getElementById('userEmailInput').value, 
-                              document.getElementById('userSubject').value, 
+                          <button
+                            onclick="sendData(
+                              document.getElementById('userNameInput').value,
+                              document.getElementById('userEmailInput').value,
+                              document.getElementById('userSubject').value,
                               document.getElementById('userDescription').value
                             )"
                             class="btn button-main button-scheme" type="button">
@@ -84,8 +84,10 @@
 
                         <div class="col-12 form-submit">
                           <!-- Change - SignOut URL -->
-                          <a href="https://rushi-donga3107.auth.ap-south-1.amazoncognito.com/logout?client_id=6q6cc2auipdm6trkb4ndrp9185&response_type=token&scope=aws.cognito.signin.user.admin+email+openid+phone+profile&redirect_uri=https://rushidonga.github.io/cognito-auth/get-in-touch.html">
-                            <button 
+
+                          <!-- <a href="https://rushi-donga3.auth.ap-south-.amazoncognito.com/logout?client_id=6q6cc2auipdm6trkb4ndrp9185&response_type=token&scope=aws.cognito.signin.user.admin+email+openid+phone+profile&redirect_uri=https://rushidonga.github.io/cognito-auth/get-in-touch.html"> -->
+                          <a href="https://codecanvaitp.auth.eu-west-2.amazoncognito.com/logout?client_id=3h1khc3gu11p0i1inc83jmvki3&response_type=token&scope=aws.cognito.signin.user.admin+email+openid+phone+profile&redirect_uri=https%3A%2F%2Fian-t-price.github.io%2Fcognito-auth%2Fget-in-touch.html">
+                            <button
                             class="btn button-main button-scheme" type="button">
                             SignOut
                           </button>
@@ -108,7 +110,7 @@
                             </div>
                           </div>
                         </li>
-        
+
                         <li>
                           <div class="media align-items-center"><span class="info-icon"><i class="icon ion-md-send"></i></span>
                             <div class="media-body info-details">

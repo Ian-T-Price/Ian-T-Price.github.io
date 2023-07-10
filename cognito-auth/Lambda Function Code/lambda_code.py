@@ -19,7 +19,7 @@ def lambda_handler(event, context):
 
     # Send Message to SNS
     handle_sns(id, event)
-    
+
     # Store data to DynamoDB
     statusCode = handle_dynamo_db(id, event)
 
@@ -30,9 +30,9 @@ def lambda_handler(event, context):
 # Publish a message to SNS
 def handle_sns(id, event):
     sns_message = """
-        You got a new Message from https://rushidonga.github.io/cognito-auth/
+        You got a new Message from https://Ian-T-Price.github.io/cognito-auth/
         The message is as follows
-        
+
         id      : {id}
         Name    : {userName}
         email   : {email}
@@ -40,12 +40,12 @@ def handle_sns(id, event):
         Subject : {subject}
         """.format(
             id=id,
-            userName=event['name'], 
+            userName=event['name'],
             email=event['email'],
-            message=event['description'], 
+            message=event['description'],
             subject=event['subject'],
         )
-        
+
     client_sns.publish(
 
         # Change - the ARN to the ARN of your SNS
@@ -68,4 +68,3 @@ def handle_dynamo_db(id, event):
     )
 
     return response['ResponseMetadata']['HTTPStatusCode']
-    

@@ -7,25 +7,25 @@ var UserName, UserEmail;
 
 // Change - Your region
 aws_region = 'ap-south-1';
-AWS.config.region = aws_region; 
+AWS.config.region = aws_region;
 
 AWS.config.apiVersions = {
     cognitoidentityserviceprovider: '2016-04-18'
-}; 
+};
 
-var cognitoidentityserviceprovider = new AWS.CognitoIdentityServiceProvider(); 
+var cognitoidentityserviceprovider = new AWS.CognitoIdentityServiceProvider();
 
 var params = {
     AccessToken:  accessToken
 };
 
 cognitoidentityserviceprovider.getUser(params, function(err, data) {
-    if (err) 
+    if (err)
     {
         // Change - Link to the Home Page
-        window.location.href = 'https://rushidonga.github.io/cognito-auth/'
+        window.location.href = 'https://Ian-T-Price.github.io/cognito-auth/'
     }
-    else 
+    else
     {
         console.log(data);
 
@@ -46,9 +46,9 @@ cognitoidentityserviceprovider.getUser(params, function(err, data) {
         }
 
         document.getElementById('userName').innerHTML = UserName;
-        document.getElementById('userEmail').innerHTML = UserEmail;  
+        document.getElementById('userEmail').innerHTML = UserEmail;
 
         document.getElementById('userNameInput').value =UserName;
-        document.getElementById('userEmailInput').value = UserEmail;    
+        document.getElementById('userEmailInput').value = UserEmail;
     }
 });

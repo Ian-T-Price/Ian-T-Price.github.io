@@ -1,8 +1,8 @@
 Call Back URL after Signup/Signin
-https://rushidonga.github.io/cognito-auth/get-in-touch.html
+https://Ian-T-Price.github.io/cognito-auth/get-in-touch.html
 
 Signout URL after clicking on signout button
-https://rushidonga.github.io/cognito-auth/
+https://Ian-T-Price.github.io/cognito-auth/
 
 
 MAKE URL OF SIGN IN
