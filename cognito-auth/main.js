@@ -27,7 +27,7 @@ cognitoidentityserviceprovider.getUser(params, function(err, data) {
     }
     else
     {
-        console.log(data);
+        console.log("main.js:", data);
 
         for(var i = 0; i < data.UserAttributes.length; i++)
         {
